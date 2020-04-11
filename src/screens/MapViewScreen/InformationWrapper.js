@@ -4,12 +4,13 @@ import InfectedWidget from "./InfectedWidget";
 import LocationStatusShare from "./LocationStatusShare";
 import DeadWidget from "./DeadWidget";
 
-export default function InformationWrapper() {
+export default function InformationWrapper({ data }) {
+    const { confirmed, deaths } = data
     return (
         <Wrapper>
-            <InfectedWidget />
-            <LocationStatusShare />
-            <DeadWidget />
+            <InfectedWidget confirmed={confirmed} />
+            <LocationStatusShare data={data} />
+            <DeadWidget deaths={deaths} />
         </Wrapper>
     )
 }

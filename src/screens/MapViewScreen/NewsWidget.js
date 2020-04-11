@@ -13,9 +13,8 @@ export default function NewsWidget(){
 }
 
 const NewsWrapper = styled.div`
-margin-top: 8px;
 align-self : center;
-background-color: rgba(176,224,230,0.3);
+background-color: rgba(176,224,230,0.5);
 display: flex;
 width : 560px;
 flex: 1;
@@ -24,4 +23,7 @@ padding-right: 8px;
 padding-top: 8px;
 padding-bottom: 8px;
 cursor: pointer;
+position: absolute;
+border-bottom-right-radius: 8px;
+border-bottom-left-radius: 8px;
 `
